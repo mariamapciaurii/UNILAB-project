@@ -5,23 +5,26 @@
 body,
 html {
     height: 100%;
+    background: var(--color-background);
 }
-.ul-project-page__container {
+/*First Section/Wordl news*/
+
+.ul-project-page {
     display: flex;
     justify-content: space-between;
 
-    &__worldnews {
+    &__left {
         width: 60%;
         height: 600px;
         background-image: url("/images/background-img.png");
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    &__worldnews {
+        width: 600px;
+        height: 247px;
+        margin: 177px 100px 176px 140px;
 
-        &__item {
-            width: 600px;
-            height: 247px;
-            margin: 177px 100px 176px 140px;
-        }
         &__title {
             border-bottom: 2px solid var(--color-white);
             padding-bottom: 40px;
@@ -39,7 +42,7 @@ html {
             font-weight: bold;
         }
         &__paragraph {
-            font-size: var(--middlee-font-size);
+            font-size: var(--middle-font-size);
             color: var(--color-white);
             margin-top: 10px;
         }
@@ -56,11 +59,18 @@ html {
             cursor: pointer;
         }
     }
-    &__morenews {
+
+    /*First Section/More news*/
+    &__right {
         width: 40%;
         height: 600px;
         display: flex;
         flex-direction: column;
+    }
+    &__morenews {
+        width: 100%;
+        height: 100%;
+        background: var(--color-white);
 
         &__title {
             width: 380px;
@@ -76,42 +86,92 @@ html {
                 text-transform: uppercase;
             }
         }
-        &__content{
+        &__arrow {
+            margin-right: 40px;
+        }
+        &__content {
             width: 380px;
             height: 299px;
             margin: 0 0 0 100px;
-            h1{
+            h1 {
                 color: var(--color-pink);
-                font-size: var(--middlee-font-size);
+                font-size: var(--middle-font-size);
                 font-weight: bold;
                 text-transform: uppercase;
                 margin-bottom: 20px;
             }
         }
-        &__left{
-            margin-right: 40px;
+        &__subtitle {
+            color: var(--color-black);
+            font-size: var(--middle-font-size);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        &__paragraph {
+            font-size: var(--middle-font-size);
+            color: var(--color-medium-grey);
+        }
+        &__time {
+            margin-bottom: 40px;
+            margin-top: 10px;
+            color: var(--color-light-grey);
+            font-size: var(small-font-size);
+            display: flex;
+            img {
+                margin-right: 10px;
+            }
         }
     }
-    &__subtitle{
+}
+
+/*Second section*/
+
+.ul-project-page__content {
+    width: 1160px;
+    height: 410px;
+    margin: 40px 140px;
+
+    &__title {
         color: var(--color-black);
-        font-size: var(--middlee-font-size);
+        font-size: var(--normal-font-size);
         font-weight: bold;
-        margin-bottom: 10px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        padding-right: 40px;
+    }
+    &__item:last-child {
+        padding-right: 0px;
+    }
+
+    &__subtitle{
+        font-size: var(--middle-font-size);
+        font-weight: bold;
+        color: var(--color-black);
+        margin: 40px 40px 10px 40px;
     }
     &__paragraph{
-        font-size: var(--middle-font-size);
         color: var(--color-medium-grey);
+        font-size: var(--small-font-size);
+        margin: 0 40px 10px 40px;
     }
     &__time{
-        margin-bottom: 40px;
-        margin-top: 10px;
-        color: var(--color-light-grey);
-        font-size: var(small-font-size);
         display: flex;
+        color: var(--color-light-grey);
+        margin-left: 40px;
+        margin-bottom: 40px;
         img{
-            margin-right: 10px;
+            padding-right: 10px;
         }
-        
     }
-   
 }
+
+
+/*Third Section*/
+
+
