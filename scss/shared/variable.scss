@@ -1,20 +1,56 @@
 /* Variable Colors*/
-:root{
-    --color-black:#202124;
-    --color-dark-grey:#343638;
-    --color-medium-grey:#A6ADB4;
-    --color-light-grey:#CBD0D3;
-    --color-background:#F6F8F9;
-    --color-white: #ffffff;
-    --color-blue:#72ACFF;
-    --color-green:#52E5BA;
-    --color-orange:#FFC96C;
-    --color-pink: #FA6980;
-    --color-red:#FF4D4D;
+:root {
+  --color-black: #202124;
+  --color-dark-grey: #343638;
+  --color-medium-grey: #a6adb4;
+  --color-light-grey: #cbd0d3;
+  --color-background: #f6f8f9;
+  --color-white: #ffffff;
+  --color-blue: #72acff;
+  --color-green: #52e5ba;
+  --color-orange: #ffc96c;
+  --color-pink: #fa6980;
+  --color-red: #ff4d4d;
 
-    /* Variable Font Size */  
-    --normal-font-size:24px;
-    --middle-font-size:16px;
-    --small-font-size:13px;
-    --smaller-font-size:11px;
+  /* Variable Font Size */
+  --normal-font-size: 24px;
+  --middle-font-size: 16px;
+  --small-font-size: 13px;
+  --smaller-font-size: 11px;
+}
+
+body {
+  background: var(--color-background);
+}
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  &--footer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--flex {
+    display: flex;
+    //   flex-direction: column;
+  }
+}
+
+@font-face {
+  font-family: "AcuminProRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro"),
+    url("../../fonts/AcuminProRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AcuminProBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Bold"),
+    url("../../fonts/AcuminProBold.woff") format("woff");
 }

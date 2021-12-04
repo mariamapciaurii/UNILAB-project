@@ -7,6 +7,7 @@
   color: var(--color-white);
   font-size: var(--small-font-size);
   font-weight: bold;
+  font-family: "AcuminProBold";
   text-transform: uppercase;
 }
 .ul-project-footer__content {
@@ -24,7 +25,11 @@
   color: var(--color-light-grey);
   font-size: var(--small-font-size);
   font-weight: bold;
+  font-family: Helvetica, sans-serif;
   line-height: 20px;
+}
+.ul-project-footer__nav a.active {
+  color: var(--color-white);
 }
 .ul-project-footer__contact__wrapper {
   position: relative;
@@ -44,6 +49,7 @@
 .ul-project-footer__contact__message {
   margin-top: 15px;
   font-size: var(--smaller-font-size);
+  font-family: Helvetica, sans-serif;
   color: var(--color-light-grey);
 }
 .ul-project-footer__contact__input {
@@ -53,6 +59,7 @@
   border-radius: 5px;
   outline: none;
   color: var(--color-white);
+  font-family: Helvetica, sans-serif;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 .ul-project-footer__contact__input::placeholder {
@@ -71,4 +78,13 @@
 }
 .ul-project-footer__social img {
   height: 100%;
+}
+.ul-project-footer__left {
+  display: flex;
+  width: 50%;
+}
+.ul-project-footer__right {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }

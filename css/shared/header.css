@@ -17,6 +17,7 @@
 .ul-project-header__logo {
   display: flex;
   align-items: center;
+  font-family: Helvetica, sans-serif;
 }
 .ul-project-header__logo a {
   color: var(--color-pink);
@@ -35,18 +36,22 @@
   height: 100%;
 }
 .ul-project-header__navigation__item a {
-  text-transform: uppercase;
+  color: var(--color-medium-grey);
   font-size: var(--smaller-font-size);
   font-weight: bold;
-  color: var(--color-medium-grey);
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
   display: flex;
   height: 100%;
   align-items: center;
   padding: 0 11px;
+  transition: color 0.2s ease-in;
+}
+.ul-project-header__navigation__item a.active {
+  color: var(--color-dark-grey);
 }
 .ul-project-header__navigation__item a:hover {
   color: var(--color-dark-grey);
-  transition: all 0.3s ease 0s;
 }
 .ul-project-header__user {
   width: 30px;

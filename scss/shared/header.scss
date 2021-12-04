@@ -1,62 +1,70 @@
 /* Header */
 .ul-project-header {
+  display: flex;
+  background: var(--color-background);
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  &__left {
     display: flex;
-    background: var(--color-background);
-    height: 50px;
-    justify-content: space-between;
-    padding: 0 20px;
+    align-items: center;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    a {
+      color: var(--color-pink);
+      font-size: var(--small-font-size);
+      font-weight: bold;
+    }
+  }
+  &__navigation {
+    height: 100%;
 
-    &__left {
-        display: flex;
-        align-items: center;
+    &__content {
+      display: flex;
+      height: 100%;
     }
-    &__right {
+
+    &__item {
+      display: flex;
+      height: 100%;
+      a {
+        color: var(--color-medium-grey);
+        font-size: var(--smaller-font-size);
+        font-weight: bold;
+        font-family: Helvetica, sans-serif;
+        text-transform: uppercase;
+
         display: flex;
-        align-items: center;
-    }
-    &__logo {
-        display: flex;
-        align-items: center;
-        a {
-            color: var(--color-pink);
-            font-size: var(--small-font-size);
-            font-weight: bold;
-        }
-    }
-    &__navigation {
         height: 100%;
+        align-items: center;
+        padding: 0 11px;
+        transition: color 0.2s ease-in;
 
-        &__content {
-            display: flex;
-            height: 100%;
+        &.active {
+          color: var(--color-dark-grey);
         }
 
-        &__item {
-            display: flex;
-            height: 100%;
-            a {
-                text-transform: uppercase;
-                font-size: var(--smaller-font-size);
-                font-weight: bold;
-                color: var(--color-medium-grey);
-                display: flex;
-                height: 100%;
-                align-items: center;
-                padding: 0 11px;
-                &:hover {
-                    color: var(--color-dark-grey);
-                    transition: all 0.3s ease 0s;
-                }
-            }
+        &:hover {
+          color: var(--color-dark-grey);
         }
+      }
     }
-    &__user {
-        width: 30px;
-        margin-left: 29px;
-        border-radius: 50%;
-        overflow: hidden;
-        img {
-            width: 100%;
-        }
+  }
+  &__user {
+    width: 30px;
+    margin-left: 29px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
     }
+  }
 }

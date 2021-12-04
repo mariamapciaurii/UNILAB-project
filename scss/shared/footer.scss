@@ -1,81 +1,106 @@
 /* Footer */
 
 .ul-project-footer {
-    height: 200px;
-    background-color: var(--color-medium-grey);
+  height: 200px;
+  background-color: var(--color-medium-grey);
 
-    &__logo {
-        a {
-            color: var(--color-white);
-            font-size: var(--small-font-size);
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+  &__logo {
+    a {
+      color: var(--color-white);
+      font-size: var(--small-font-size);
+      font-weight: bold;
+      font-family: "AcuminProBold";
+      text-transform: uppercase;
     }
-    &__content {
-        display: flex;
-        justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  &__links {
+    display: flex;
+  }
+
+  &__nav {
+    margin: 0 40px;
+    a {
+      color: var(--color-light-grey);
+      font-size: var(--small-font-size);
+      font-weight: bold;
+      font-family: Helvetica, sans-serif;
+      line-height: 20px;
+
+      &.active {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &__contact {
+    &__wrapper {
+      position: relative;
+      width: 262px;
+      height: 65px;
+    }
+    &__send {
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      width: 16px;
+      img {
         width: 100%;
+      }
     }
-    &__links {
-        display: flex;
+    &__message {
+      margin-top: 15px;
+      font-size: var(--smaller-font-size);
+      font-family: Helvetica, sans-serif;
+      color: var(--color-light-grey);
     }
-    &__nav {
-        margin: 0 40px;
-        a {
-            color: var(--color-light-grey);
-            font-size: var(--small-font-size);
-            font-weight: bold;
-            line-height: 20px;
-        }
-    }
-    &__contact {
-        &__wrapper {
-            position: relative;
-            width: 262px;
-            height: 65px;
-        }
-        &__send {
-            cursor: pointer;
-            position: absolute;
-            right: 20px;
-            top: 15px;
-            width: 16px;
-            img{
-                width: 100%;
-            }
-        }
-        &__message {
-            margin-top: 15px;
-            font-size: var(--smaller-font-size);
-            color: var(--color-light-grey);
-        }
-        &__input {
-            width: 100%;
-            background-color: inherit;
-            padding: 10px;
-            border-radius: 5px;
-            outline: none;
-            color: var(--color-white);
-            border: 2px solid rgba(255, 255, 255, 0.1);
+    &__input {
+      width: 100%;
+      background-color: inherit;
+      padding: 10px;
+      border-radius: 5px;
+      outline: none;
+      color: var(--color-white);
+      font-family: Helvetica, sans-serif;
+      border: 2px solid rgba(255, 255, 255, 0.1);
 
-            &::placeholder {
-                color: var(--color-light-grey);
-                opacity: 0.5;
-            }
-        }
+      &::placeholder {
+        color: var(--color-light-grey);
+        opacity: 0.5;
+      }
     }
-    &__socials {
-        height: 100%;
-        width: 160px;
-        display: flex;
-        justify-content: space-between;
+  }
+
+  &__socials {
+    height: 100%;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social {
+    height: 16px;
+    width: 16px;
+    img {
+      height: 100%;
     }
-    &__social{
-        height: 16px;
-        width: 16px;
-        img{
-            height: 100%;
-        }
-    }
+  }
+
+  &__left {
+    display: flex;
+    width: 50%;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
 }
