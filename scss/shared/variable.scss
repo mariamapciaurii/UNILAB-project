@@ -21,8 +21,13 @@
 
 body {
   background: var(--color-background);
+
+  &.overflowHidden {
+    overflow: hidden;
+  }
 }
-.container {
+
+.ul-project-container {
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;

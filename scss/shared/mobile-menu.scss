@@ -1,0 +1,146 @@
+.ul-project-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.226);
+  z-index: 999;
+
+  &.active {
+    display: block;
+  }
+}
+
+.ul-project-mobile-menu {
+  display: none;
+
+  position: fixed;
+
+  z-index: 9999;
+
+  width: 80%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  transform: translateX(-100%);
+  transition: 0.2s ease-in;
+  flex-direction: column;
+  &.active {
+    box-shadow: 4px 1px 20px 2px rgb(0 0 0 / 30%);
+    transform: none;
+  }
+
+  &__top {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__logo {
+    color: var(--color-pink);
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 40px;
+    padding-bottom: 90px;
+  }
+
+  &__menu {
+    padding-left: 40px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 30px;
+      opacity: 0.5;
+      img {
+        width: 100%;
+      }
+    }
+
+    &-text {
+      font-size: 11px;
+      font-weight: bold;
+      font-family: Helvetica, sans-serif;
+      color: var(--color-medium-grey);
+      text-transform: uppercase;
+
+      a {
+        color: inherit;
+      }
+    }
+
+    &--active {
+      .ul-project-mobile-menu__item-icon {
+        opacity: 1;
+      }
+
+      .ul-project-mobile-menu__item-text {
+        color: var(--color-black);
+      }
+    }
+
+    &--user {
+      .ul-project-mobile-menu__item-icon {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__footer {
+    background: #bdbfc0;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 40px;
+
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    &__nav {
+      a {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: var(--small-font-size);
+        font-weight: bold;
+        font-family: Helvetica, sans-serif;
+        line-height: 20px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        display: block;
+
+        &.active {
+          color: var(--color-white);
+        }
+      }
+    }
+
+    &__socials {
+      height: 100%;
+      width: 160px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__social {
+      height: 16px;
+      width: 16px;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="ul-project-header">
+    <header class="ul-project-header ul-project-header--about">
       <div class="ul-project-header__left">
         <!-- Logo -->
         <div class="ul-project-header__logo">
@@ -27,7 +27,7 @@
               <a href="index.html">Home</a>
             </li>
             <li class="ul-project-header__navigation__item">
-              <a href="about.html">Discovery</a>
+              <a class="active" href="about.html">About</a>
             </li>
             <li class="ul-project-header__navigation__item">
               <a href="#">Photos</a>
@@ -44,107 +44,258 @@
       </div>
     </header>
 
-    <section></section>
-
-    <footer class="ul-project-footer">
-      <div class="container container--footer">
-        <div class="ul-project-footer__content">
-          <div class="ul-project-footer__logo">
-            <a href="#">Logo</a>
-          </div>
-
-          <div class="ul-project-footer__links">
-            <div class="ul-project-footer__nav">
-              <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Discovery</a>
-                </li>
-                <li>
-                  <a href="#">Photos</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="ul-project-footer__nav">
-              <ul>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Help</a>
-                </li>
-                <li>
-                  <a href="">Terms</a>
-                </li>
-                <li>
-                  <a href="#">Guidlines</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="ul-project-footer__nav">
-              <ul>
-                <li>
-                  <a href="#">Testimonials</a>
-                </li>
-                <li>
-                  <a href="#">Advertise</a>
-                </li>
-                <li>
-                  <a href="#">Integrations</a>
-                </li>
-                <li>
-                  <a href="#">Careers</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="ul-project-footer__contact">
-            <div class="ul-project-footer__contact__wrapper">
-              <input
-                class="ul-project-footer__contact__input"
-                type="email"
-                placeholder="Email"
-              />
-              <div class="ul-project-footer__contact__send">
-                <img src="./images/send.png" alt="send email" />
+    <!-- Section -->
+    <main>
+      <div class="ul-project-container">
+        <section class="ul-project-about">
+          <div class="ul-project-about__header">
+            <div class="ul-project-about__breadcrumb">
+              <div
+                class="
+                  ul-project-about__breadcrumb__item
+                  ul-project-about__breadcrumb__item--home
+                "
+              >
+                <div class="ul-project-about__breadcrumb__item-icon">
+                  <a href="index.html">
+                    <img src="./images/home.png" alt="home" />
+                  </a>
+                </div>
+                Story
               </div>
-              <p class="ul-project-footer__contact__message">
-                Stay in touch with us for the freshest products!
-              </p>
+              <div class="ul-project-about__breadcrumb__separator">/</div>
+              <div class="ul-project-about__breadcrumb__item">World News</div>
+            </div>
+
+            <div class="ul-project-about__back">
+              <a href="index.html">
+                <img src="./images/back.png" />
+              </a>
+            </div>
+
+            <div class="ul-project-about__filter">
+              <img src="./images/filter.png" />
             </div>
           </div>
 
-          <div class="ul-project-footer__socials">
-            <div class="ul-project-footer__social">
-              <a href="https://www.instagram.com/">
-                <img src="./images/instagram.png" alt="instagram" />
-              </a>
+          <div class="ul-project-about__news">
+            <div
+              class="
+                ul-project-about__news__section
+                ul-project-about__news__section--left
+              "
+            >
+              <div class="ul-project-about__news__section-content">
+                <div class="ul-project-about__news__section-title">
+                  WORLD NEWS
+                </div>
+
+                <div class="ul-project-about__news__section-desc">
+                  Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                  detracto vidit.
+                </div>
+
+                <div class="ul-project-about__news__section-user">
+                  <img src="./images/user-avatar.png" alt="user name" />
+                </div>
+              </div>
             </div>
 
-            <div class="ul-project-footer__social">
-              <a href="https://twitter.com/">
-                <img src="./images/twitter.png" alt="twitter" />
-              </a>
+            <div
+              class="
+                ul-project-about__news__section
+                ul-project-about__news__section--right
+              "
+            >
+              <div class="ul-project-about__news__section-content">
+                <div class="ul-project-about__news__section-search">
+                  <label for="date">Select a date</label>         
+                  <select name="date" id="date">
+                    <option value="option-select">Select...</option>
+                    <option value="option-1">1</option>
+                    <option value="option-2">2</option>
+                    <option value="option-3">3</option>
+                    <option value="option-4">4</option>
+                </select>
+                   <label for="keyword">Enter the first keyword</label>
+                   <input type="text" id="keyword">
+                   <button>Search</button>
+               </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ul-project-about__blog">
+            <div class="ul-project-about__blog__user">
+              <div class="ul-project-about__blog__user-image">
+                <img src="./images/user-avatar.png" alt="user name" />
+              </div>
+              <div class="ul-project-about__blog__user-name">
+                <h1>Phasellus eu nulla malesuada, luctus diam.</h1>
+              </div>
             </div>
 
-            <div class="ul-project-footer__social">
-              <a href="https://facebook.com/">
-                <img src="./images/facebook.png" alt="facebook" />
-              </a>
+            <div class="ul-project-about__blog__items">
+              <div class="ul-project-about__blog__item">
+                <p>
+                  Dignissim rutrum ridiculus lacinia phasellus torquent ad
+                  aliquet, nisi dictum cubilia class habitasse commodo, semper
+                  potenti nec ac per egestas. Ac volutpat ullamcorper phasellus
+                  montes sollicitudin litora ridiculus mi conubia inceptos
+                  euismod odio curabitur, tortor eros porta venenatis facilisis
+                  quam blandit in ut lobortis consequat justo. Hac libero
+                  quisque tortor conubia iaculis
+                </p>
+              </div>
+              <div class="ul-project-about__blog__item">
+                <p>
+                  Nascetur himenaeos morbi gravida porta sapien justo aliquam
+                  pellentesque dapibus curae, cursus ultrices suspendisse cras
+                  ligula id aenean vulputate taciti, eleifend eros bibendum
+                  scelerisque lobortis venenatis nulla tristique tempus. Quisque
+                  eleifend vulputate.
+                </p>
+
+                <div class="ul-project-about__blog__time">
+                  <img src="./images/time.png" alt="time" />
+                  <p>2 min ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ul-project-about__aricle">
+            <div class="ul-project-about__aricle__image">
+              <img src="images/news-image.jpg" alt="news image" />
+            </div>
+            <div class="ul-project-about__aricle__text">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit sodales
+              primis, mollis viverra conubia ligula inceptos laoreet libero
+              tortor, nascetur non habitasse iaculis tempor nec egestas fames
+              augue, platea porta integer nostra curae sed arcu. Nec ut diam
+              vulputate ante scelerisque ridiculus lobortis orci mi curae
+              himenaeos quis, senectus curabitur ullamcorper a porttitor nibh
+              fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui
+              gravida in potenti interdum, <br />
+              <br />
+              class rhoncus neque eget magna at Ullamcorper porttitor non
+              pharetra cursus nisl mollis pellentesque primis penatibus platea,
+              dictum himenaeos eget mi bibendum ad molestie aliquet curae quis
+              quisque, nunc duis ac at elementum dui integer viverra tempus.
+              Lacinia bibendum diam senectus egestas nec molestie convallis
+              aenean hac tempus, vivamus purus congue euismod fringilla cursus
+              donec est eu blandit platea, feugiat vitae netus orci habitant
+              accumsan placerat morbi nostra.
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ul-project-footer">
+      <div class="ul-project-container ul-project-container--footer">
+        <div class="ul-project-footer__content">
+          <div class="ul-project-footer__left">
+            <div class="ul-project-footer__logo">
+              <a href="#">Logo</a>
             </div>
 
-            <div class="ul-project-footer__social">
-              <a href="https://web.com/">
-                <img src="./images/internet.png" alt="web" />
-              </a>
+            <div class="ul-project-footer__links">
+              <div class="ul-project-footer__nav">
+                <ul>
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a class="active" href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Photos</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="ul-project-footer__nav">
+                <ul>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Help</a>
+                  </li>
+                  <li>
+                    <a href="">Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Guidlines</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="ul-project-footer__nav">
+                <ul>
+                  <li>
+                    <a href="#">Testimonials</a>
+                  </li>
+                  <li>
+                    <a href="#">Advertise</a>
+                  </li>
+                  <li>
+                    <a href="#">Integrations</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="ul-project-footer__right">
+            <div class="ul-project-footer__contact">
+              <div class="ul-project-footer__contact__wrapper">
+                <input
+                  class="ul-project-footer__contact__input"
+                  type="email"
+                  placeholder="Email"
+                />
+                <div class="ul-project-footer__contact__send">
+                  <img src="./images/send.png" alt="send email" />
+                </div>
+                <p class="ul-project-footer__contact__message">
+                  Stay in touch with us for the freshest products!
+                </p>
+              </div>
+            </div>
+
+            <div class="ul-project-footer__socials">
+              <div class="ul-project-footer__social">
+                <a href="https://www.instagram.com/">
+                  <img src="./images/instagram.png" alt="instagram" />
+                </a>
+              </div>
+
+              <div class="ul-project-footer__social">
+                <a href="https://twitter.com/">
+                  <img src="./images/twitter.png" alt="twitter" />
+                </a>
+              </div>
+
+              <div class="ul-project-footer__social">
+                <a href="https://facebook.com/">
+                  <img src="./images/facebook.png" alt="facebook" />
+                </a>
+              </div>
+
+              <div class="ul-project-footer__social">
+                <a href="https://web.com/">
+                  <img src="./images/internet.png" alt="web" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

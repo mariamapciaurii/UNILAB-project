@@ -2,6 +2,7 @@
 @import "../shared/variable.scss";
 @import "../shared/header";
 @import "../shared/footer.scss";
+@import "../shared//mobile-menu.scss";
 
 /* news Section*/
 .ul-project-page {
@@ -153,6 +154,37 @@
       font-style: oblique;
       img {
         margin-right: 10px;
+      }
+    }
+  }
+
+  &__header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-background);
+    height: 45px;
+    padding: 0 16px;
+    &__user {
+      width: 16px;
+      height: 16px;
+      img {
+        width: 100%;
+      }
+    }
+
+    &__logo {
+      color: var(--color-medium-grey);
+      font-size: 13px;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    &__menu {
+      width: 16px;
+      height: 16px;
+      img {
+        width: 100%;
       }
     }
   }

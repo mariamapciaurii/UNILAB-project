@@ -21,19 +21,22 @@
 body {
   background: var(--color-background);
 }
+body.overflowHidden {
+  overflow: hidden;
+}
 
-.container {
+.ul-project-container {
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
 }
-.container--footer {
+.ul-project-container--footer {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.container--flex {
+.ul-project-container--flex {
   display: flex;
 }
 
